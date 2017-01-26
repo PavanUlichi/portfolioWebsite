@@ -1,0 +1,41 @@
+.btn-xs{
+    font-size: 12px;
+    padding: 0px 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+.navbar-brand, .nav > li > a {
+  padding: 10px 15px;
+}
+.jumbotron {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 25px;
+  color: inherit;
+  background-color: #000000;
+}
+.carousel {
+    background:#464646;
+    margin-top: 80px;
+}
+.carousel .item {
+  height: 300px;
+}
+.img-responsive{
+  height: 100%;
+  width: auto;
+}
+#cuc{
+  height: 100%;
+  width: 100%;
+}
+#dash{
+  height: 100%;
+  width: 150%;
+}
+body{
+  background-color: #e6ecf7;
+}
+.row{
+  margin-top: 25px;
+}
