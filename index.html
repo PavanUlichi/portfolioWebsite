@@ -8,12 +8,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="myStyle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">Portfolio Website</a>
+      <a class="navbar-brand" href="index.html">Pavan Ulichi</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="index.html">Home</a></li>
@@ -32,32 +33,50 @@
     <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
     <li data-target="#mycarousel" data-slide-to="1"></li>
     <li data-target="#mycarousel" data-slide-to="2"></li>
+    <li data-target="#mycarousel" data-slide-to="3"></li>
 </ol>
 
 <div class="carousel-inner" role="listbox">
-    <div class="item active">
+  <div class="item active">
+      <img class="img-circle"
+       src="img/me.jpg" alt="me" width="25%" height="auto">
+      <div class="carousel-content">
+      <div class="carousel-caption">
+      <h2 style="padding-left:400px; color: red">Web developer & user experience designer</h2>
+      <p style="padding-left:400px">I am a Full stack web developer with over 2 years of work experience relevant to Web development in Tata Consultancy Services.</p>
+      <p style="padding-left:400px"><a class="btn btn-primary btn-xs" href="http://hack.osu.edu/2016/">More &raquo;</a></p>
+    </div>
+  </div>
+</div>
+    <div class="item">
         <img class="img-responsive"
          src="img/hackohio.jpg" alt="hackohio">
+        <div class="carousel-content">
         <div class="carousel-caption">
         <h2 style="padding-left:400px; color: red">Participant in OHI/O 2016</h2>
         <p style="padding-left:400px">HackOHI/O is put on by OHI/O, a student-led organization at Ohio State that aims to foster a tech culture at our university.</p>
         <p style="padding-left:400px"><a class="btn btn-primary btn-xs" href="http://hack.osu.edu/2016/">More &raquo;</a></p>
         </div>
+      </div>
     </div>
     <div class="item">
       <img class="img-responsive"
        src="img/cuc.jpg" alt="CUC" id="cuc">
+       <div class="carousel-content" id="car">
         <div class="carousel-caption">
         <h2 style="color: red">Organzier of Clean up Cincy </h2><p><a class="btn btn-primary btn-xs" href="http://www.cleanupcincy.com/">More &raquo;</a></p>
         </div>
     </div>
+  </div>
     <div class="item">
       <img class="img-responsive"
        src="img/dash.jpeg" alt="dashbash" id="dash">
+       <div class="carousel-content" id="car">
         <div class="carousel-caption">
         <strong><h2 style="color: red; margin-top: 120%">Volunteer in Bearcat Dash & Bash </h2></strong><p><a class="btn btn-primary btn-xs" href="http://bearcatsdash.com/">More &raquo;</a></p>
         </div>
     </div>
+  </div>
   </div>
 <!-- Controls -->
 <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
@@ -76,24 +95,52 @@
                     </button>
                 </div>
             </div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-3">
-      <p>1</p>
-    </div>
-    <div class="col-sm-3">
-      <p>1</p>
-    </div>
-    <div class="col-sm-3">
-      <p>1</p>
-    </div>
-    <div class="col-sm-3">
-      <p>1</p>
-    </div>
-  </div>
-</div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <a href="#"><img src="img/work.png" style="height:150px; width: auto"></a>
+              </div>
+              <div class="col-sm-3">
+                <a href="#"><img src="img/edu.png" href="#" style="height:150px; width: auto"></a>
+              </div>
+              <div class="col-sm-3">
+                <a href="#"><img src="img/pro.png" href="#" style="height:150px; width: auto"></a>
+              </div>
+              <div class="col-sm-3">
+                <a href="#"><img src="img/cer.png" href="#" style="height:150px; width: auto"></a>
+              </div>
+            </div>
+          </div>
+            <footer class="row-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4">
+                          <div class="nav navbar-nav" style="padding: 40px 10px;">
+                              <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                              <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                              <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                              <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                              <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                              <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                          </div>                </div>
+                        <div class="col-xs-6 col-sm-12">
+                            <p style="padding:10px;"></p>
+                            <p align=center>© Copyright 2017 Pavan Ulichi</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script>
+       $(document).ready(function(){
+           $("#mycarousel").carousel( { interval: 5000 } );
+                         $("#carousel-pause").click(function(){
+               $("#mycarousel").carousel('pause');
+           });
+                       $("#carousel-play").click(function(){
+               $("#mycarousel").carousel('cycle');
+           });
+       });
+   </script>
 </body>
 </html>
