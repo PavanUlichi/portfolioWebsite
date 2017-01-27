@@ -9,6 +9,7 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="myStyle.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -17,12 +18,12 @@
       <a class="navbar-brand" href="index.html">Pavan Ulichi</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="index.html">About me</a></li>
-      <li><a href="#">Volunteer experience</a></li>
+      <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+      <li><a href="index.html"><i class="fa fa-heartbeat" aria-hidden="true"></i> About me</a></li>
+      <li><a href="#"><i class="fa fa-hand-paper-o" aria-hidden="true"></i> Volunteer experience</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right btn btn-primary btn-xs navbar-btn">
-      <li><a href="https://www.linkedin.com/in/pavan-ulichi-a7138287">Connect</a></li>
+      <li><a href="https://www.linkedin.com/in/pavan-ulichi-a7138287"><i class="fa fa-users" aria-hidden="true"></i> Connect</a></li>
     </ul>
   </div>
 </nav>
@@ -62,9 +63,9 @@
     <div class="item">
       <img class="img-responsive"
        src="img/cuc.jpg" alt="CUC" id="cuc">
-       <div class="carousel-content" id="car">
+       <div class="carousel-content" id="car1">
         <div class="carousel-caption">
-        <h2 style="color: red">Organzier of Clean up Cincy </h2><p><a class="btn btn-primary btn-xs" href="http://www.cleanupcincy.com/">More &raquo;</a></p>
+        <h2 style="color: red">Organizer of Clean up Cincy </h2><p><a class="btn btn-primary btn-xs" href="http://www.cleanupcincy.com/">More &raquo;</a></p>
         </div>
     </div>
   </div>
@@ -97,29 +98,217 @@
             </div>
           <div class="container">
             <div class="row">
-              <div class="col-sm-3">
+              <div class="col-sm-3" data-toggle="modal" data-target="#myModal1">
                 <a href="#"><img src="img/work.png" style="height:150px; width: auto"></a>
               </div>
-              <div class="col-sm-3">
+              <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><bold>Work experience</bold></h4>
+        </div>
+        <div class="modal-body">
+          <p>I am a Full stack web developer with over 2 years of work experience relevant to Web development in Tata Consultancy Services. With this background, I have a clear understanding on Software Development Life Cycle.<br><br><br><strong>Project Description</strong><br>Service  Integrator  is  a  web  based  integration  platform  that  enables seamless  integration  among  various applications.  It has  highly  configurable  processing  engines to  tackle  various  integration  challenges.  It allows  millions  of messages  and  files  that  are  exchanged  across  multiple  systems  at  a  time.  High  volume  jobs  are  processed  using  file  based interfaces.  It supports  rich  set of  in-built adapters  like  FTP/SFTP,  SMTP,  SCP,  JMS,  MQ,  TCP-IP  and  SOAP  and  easy-to-use rules definition  framework,  enabling  rapid  integration  with  Financial  Networks  such  as  SWIFT,  FIX,  Link  Up  Markets  and Feeds  such  as  Reuters,  Bloomberg,  Telekurs.  Configuration  changes are  flexible  since  it is  incorporated  through  XML.<br><br><br><strong>Technical Skills:</strong><br>Languages : Core JAVA, Python, HTML, CSS, JavaScript, C<br>Frameworks : Bootstrap, Angular.js, Node.js, JQuery, Flask<br>Cloud Stacks : AWS EC2, Docker<br>Databases : MySQL<br>Version Control : git</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+              <div class="col-sm-3" data-toggle="modal" data-target="#myModal2">
                 <a href="#"><img src="img/edu.png" href="#" style="height:150px; width: auto"></a>
               </div>
+              <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><bold>Education</bold></h4>
+        </div>
+        <div class="modal-body">
+          <p>Currently I am pursuing Masters in Computer Engineering at the University of Cincinnati with specialization in Cyber Security.
+I have good problem-solving skills and like to stay up to date on current and emerging technologies. I am looking forward to work in a committed and fast-paced environment.
+<br><br><strong>GPA: </strong>3.9/4<br><br><strong>Courses</strong><ul>
+<li>Cloud Computing (CS 6065)</li>
+<li>Cyber Defence Overview (CS 6055)</li>
+<li>Wireless and Networks (CS 6097)</li>
+<li>Mathematical Logic (CS 6021)</li>
+<li>Malware Analysis (CS 7038)</li>
+<li>Security Vulnerability Assessement (CS 6056)</li>
+<li>Strategic HR Leadership (OLHR 8090)</li>
+<li>Quality Control (MECH 6074)</li></ul></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
               <div class="col-sm-3">
-                <a href="#"><img src="img/pro.png" href="#" style="height:150px; width: auto"></a>
+                <a href="#proz"><img src="img/pro.png" href="#" style="height:150px; width: auto"></a>
               </div>
               <div class="col-sm-3">
                 <a href="#"><img src="img/cer.png" href="#" style="height:150px; width: auto"></a>
               </div>
             </div>
-          </div>
+          </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+          <h2 style="color: green; font-family: impact; position: relative" id="proz">Projects</h2>
+          <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Shop with a snap</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">This project is made as a part of Hack OHI/O, a hackathon event that happened at Ohio State University. Shop with a snap is a web application built on cloud technology used to shop online with a single click.
+We used JavaScript, Ajax, AWS EC2, node.js technologies for creating this application.
+We used Google cloud vision API provided by Google which helps in detecting label from an image, this is purely based on Artificial Intelligence.
+We also used Amazon product API for retrieving search results using the keyword.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Implementing a RESTful web-service</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">This project implements a simple calculator application as a  RESTful web service. Rest API is one of the popular web-services in the world. This code implements Rest API for performing basic arithmetic operations like addition, subtraction, multiplication, and division. I have used pythons flask framework to implement APIs. The output JSON data is dynamically displayed on the same webpage using AJAX.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Matching Game</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
+This project uses simple Javascript and DOM model to implement its functionality.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Matching Game</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
+This project uses simple Javascript and DOM model to implement its functionality.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Matching Game</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
+This project uses simple Javascript and DOM model to implement its functionality.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Matching Game</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
+This project uses simple Javascript and DOM model to implement its functionality.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Matching Game</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
+This project uses simple Javascript and DOM model to implement its functionality.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Matching Game</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
+This project uses simple Javascript and DOM model to implement its functionality.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Matching Game</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
+This project uses simple Javascript and DOM model to implement its functionality.
+      </div>
+    </div>
+  </div>
+
+
+</div>
             <footer class="row-footer">
                 <div class="container">
                     <div class="row">
+                      <div class="col-xs-6 col-sm-8">
+                        <div class="nav navbar-nav" style="padding: 40px 10px;">
+                            <a class="btn btn-social-icon btn-google-plus" href="index.html"><i class="fa fa-home"></i></a>
+                        </div>
+                      </div>
                         <div class="col-xs-6 col-sm-4">
                           <div class="nav navbar-nav" style="padding: 40px 10px;">
-                              <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                              <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                              <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                              <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                              <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/u/0/109013077246498984006"><i class="fa fa-google-plus"></i></a>
+                              <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/pavan.ulichi"><i class="fa fa-facebook"></i></a>
+                              <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/pavan-ulichi-a7138287"><i class="fa fa-linkedin"></i></a>
+                              <a class="btn btn-social-icon btn-github" href="https://github.com/PavanUlichi"><i class="fa fa-github"></i></a>
                               <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                               <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
                           </div>                </div>
@@ -131,7 +320,8 @@
                 </div>
             </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script>
+<script src="js/bootstrap.min.js"></script>
+  <script>
        $(document).ready(function(){
            $("#mycarousel").carousel( { interval: 5000 } );
                          $("#carousel-pause").click(function(){
