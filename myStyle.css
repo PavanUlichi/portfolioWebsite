@@ -7,13 +7,6 @@
 .navbar-brand, .nav > li > a {
   padding: 10px 15px;
 }
-.jumbotron {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  margin-top: 25px;
-  color: inherit;
-  background-color: #000000;
-}
 .carousel {
     background:#464646;
     margin-top: 80px;
@@ -35,7 +28,7 @@
   width: 150%;
 }
 body{
-  background-color: #e6ecf7;
+  background-image: url("img/swirl_pattern.png");
 }
 .row{
   margin-top: 35px;
@@ -82,4 +75,45 @@ body{
 }
 .row-footer{
   background-color: #1a1a1a;
+}
+button{
+  padding: 0;
+border: none;
+background: none;
+}
+#mar{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.panel-body
+{
+  background-color: #90EE90;
+  font-weight: bold;
+}
+sub{
+  font-style: italic;
+  font-size: 60%;
+}
+#about{
+  background-color: #1a1a1a!important;
+}
+#ab{
+  background-color: #bababa!important;
+}
+p{
+  font-weight: bold;
+}
+#hcj{
+  font-size: 300px;
+}
+.card-title{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.card-text{
+  background-color: #A7A4A1;
+  text-align: center;
+  font-weight: normal;
 }

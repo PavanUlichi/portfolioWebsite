@@ -12,21 +12,23 @@
     <link href="css/bootstrap-social.css" rel="stylesheet">
 </head>
 <body>
+  <header class="cd-auto-hide-header">
   <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="index.html">Pavan Ulichi</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-      <li><a href="index.html"><i class="fa fa-heartbeat" aria-hidden="true"></i> About me</a></li>
-      <li><a href="#"><i class="fa fa-hand-paper-o" aria-hidden="true"></i> Volunteer experience</a></li>
+      <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+      <li><a role="button" onclick="jumpto('about')"><i class="fa fa-heartbeat" aria-hidden="true"></i> About me</a></li>
+      <li><a role="button" onclick="jumpto('vol')"><i class="fa fa-hand-paper-o" aria-hidden="true"></i> Volunteer experience</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right btn btn-primary btn-xs navbar-btn">
       <li><a href="https://www.linkedin.com/in/pavan-ulichi-a7138287"><i class="fa fa-users" aria-hidden="true"></i> Connect</a></li>
     </ul>
   </div>
 </nav>
+</header>
              <div id="mycarousel" class="carousel slide" data-ride="carousel">
                <!-- Wrapper for slides -->
                <!-- Indicators -->
@@ -45,7 +47,7 @@
       <div class="carousel-caption">
       <h2 style="padding-left:400px; color: red">Web developer & user experience designer</h2>
       <p style="padding-left:400px">I am a Full stack web developer with over 2 years of work experience relevant to Web development in Tata Consultancy Services.</p>
-      <p style="padding-left:400px"><a class="btn btn-primary btn-xs" href="http://hack.osu.edu/2016/">More &raquo;</a></p>
+      <p style="padding-left:400px"><a class="btn btn-primary btn-xs" role="button" onclick="jumpto('about')">More &raquo;</a></p>
     </div>
   </div>
 </div>
@@ -96,10 +98,16 @@
                     </button>
                 </div>
             </div>
+            <div class="container">
+            <div class="row">
+              <div class="col-sm-3" style="background-color: #F98D76; color: white; font-size: 200%; margin-top:-30px"><i class="fa fa-heart" aria-hidden="true"></i> Favourite quotes</div>
+              <div class="col-sm-9">
+<marquee onMouseOver="this.stop()" onMouseOut="this.start()" behavior="scroll" direction="left" style="margin-top:-40px"><h3>You must be the change you wish to see in the world.<sub>--Mahatma Gandhi</sub>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     We are what our thoughts have made us; so take care about what you think. Words are secondary. Thoughts live; they travel far. <sub>--Swamy Vivekananda</sub>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Your most unhappy customers are your greatest source of learning. <sub>--Bill Gates</<sub></h3></marquee>
+</div></div></div>
           <div class="container">
             <div class="row">
               <div class="col-sm-3" data-toggle="modal" data-target="#myModal1">
-                <a href="#"><img src="img/work.png" style="height:150px; width: auto"></a>
+                <a href="#"><img src="img/work.png" style="height: auto; width: 250px; margin-top: -30%"></a>
               </div>
               <div class="modal fade" id="myModal1" role="dialog">
     <div class="modal-dialog">
@@ -121,7 +129,7 @@
     </div>
   </div>
               <div class="col-sm-3" data-toggle="modal" data-target="#myModal2">
-                <a href="#"><img src="img/edu.png" href="#" style="height:150px; width: auto"></a>
+                <a href="#"><img src="img/edu.png" href="#" style="height: auto; width: 200px; margin-top: -20%"></a>
               </div>
               <div class="modal fade" id="myModal2" role="dialog">
     <div class="modal-dialog">
@@ -153,14 +161,40 @@ I have good problem-solving skills and like to stay up to date on current and em
     </div>
   </div>
               <div class="col-sm-3">
-                <a href="#proz"><img src="img/pro.png" href="#" style="height:150px; width: auto"></a>
+                <a role="button" onclick="jumpto('mar')"><img src="img/pro.png" href="#" style="height: auto; width: 200px; margin-top: -20%" id="img1"></a>
               </div>
               <div class="col-sm-3">
-                <a href="#"><img src="img/cer.png" href="#" style="height:150px; width: auto"></a>
+                <a role="button" onclick="jumpto('cer')"><img src="img/cer.png" href="#" style="height: auto; width: 200px; margin-top: -20%"></a>
               </div>
             </div>
-          </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div><br><br><br>
 
+          <div style="margin-right: 10%; margin-left:10%">
+          <div class="panel">
+<div class="panel-heading" id="about">
+   <h3 class="panel-title" style="color: white"><b>About me:</b></h3>
+</div>
+<div class="panel-body" id="ab">
+  <p><b>
+    I am a Full stack web developer with over 2 years of work experience relevant to Web development in Tata Consultancy Services. With this background, I have a clear understanding on Software Development Life Cycle.<br><br>
+
+Currently I am pursuing Masters in Computer Engineering at the University of Cincinnati with specialization in Cyber Security.
+I have good problem-solving skills and like to stay up to date on current and emerging technologies. I am looking forward to work in a committed and fast-paced environment.<br><br>
+
+Technical Skills:<br>
+Languages : Core JAVA, Python, HTML, CSS, JavaScript, C<br>
+Frameworks : Bootstrap, Angular.js, Node.js, JQuery, Flask<br>
+Cloud Stacks : AWS EC2, Docker<br>
+Databases : MySQL<br>
+Version Control : git<br>
+
+You can visit my Github account <a href="https://github.com/PavanUlichi">here</a>
+
+  </b></p>
+</div>
+</div></div>
+
+          <div id=mar>
           <h2 style="color: green; font-family: impact; position: relative" id="proz">Projects</h2>
           <div class="panel-group" id="accordion">
   <div class="panel panel-default">
@@ -206,14 +240,19 @@ This project uses simple Javascript and DOM model to implement its functionality
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-        Matching Game</a>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+        Hadoop MapReduce Analysis - Books Set</a>
       </h4>
     </div>
-    <div id="collapse3" class="panel-collapse collapse">
+    <div id="collapse4" class="panel-collapse collapse">
       <div class="panel-body">
-        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
-This project uses simple Javascript and DOM model to implement its functionality.
+        This project builds a Hadoop map/reduce application that yields the following analysis:
+-> Counts of occurrence for each of the full terms in the “subjects” field of the work data structure
+-> “subjects” Term with maximum occurrence, term with minimum occurrence
+-> The average and the median occurrence count, among all terms
+
+The given data set is available at openlibrary.org.
+Dump location: http://openlibrary.org/data/ol_dump_works_latest.txt.gz
       </div>
     </div>
   </div>
@@ -221,14 +260,15 @@ This project uses simple Javascript and DOM model to implement its functionality
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-        Matching Game</a>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+        Hadoop Streaming API for Dataset Analysis</a>
       </h4>
     </div>
-    <div id="collapse3" class="panel-collapse collapse">
+    <div id="collapse5" class="panel-collapse collapse">
       <div class="panel-body">
-        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
-This project uses simple Javascript and DOM model to implement its functionality.
+        This project performs map-reduce operation on data that was collected from the City of New York’s data website, and contains all reports of vehicular incidents in New York City over a period of time.
+
+Using the Hadoop streaming API built mapper and reducer scripts that analyze the data and yield summary counts for each vehicle that describe the total count, per vehicle type, that the vehicle type was involved in an incident.
       </div>
     </div>
   </div>
@@ -236,14 +276,14 @@ This project uses simple Javascript and DOM model to implement its functionality
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-        Matching Game</a>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+        Cyber Defense Exercise</a>
       </h4>
     </div>
-    <div id="collapse3" class="panel-collapse collapse">
+    <div id="collapse6" class="panel-collapse collapse">
       <div class="panel-body">
-        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
-This project uses simple Javascript and DOM model to implement its functionality.
+        The Cyber Defense Exercise (CDX), an annual competition designed to sharpen the skills of our nation's next generation of cyber warriors. The prestigious event, held each spring, select cadets and midshipmen from U.S. and Canadian military service academies participate in the Cyber Defense Exercise (CDX), a competition that tests skills in building, securing, and defending networks from hostile attacks mounted by NSA information assurance experts. The Information Assurance Directorate (IAD) sponsors and collaborates with organizations across NSA to conduct the competition, held annually since 2001.
+
       </div>
     </div>
   </div>
@@ -251,14 +291,13 @@ This project uses simple Javascript and DOM model to implement its functionality
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-        Matching Game</a>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+        Responsive Web-design using Bootstrap</a>
       </h4>
     </div>
-    <div id="collapse3" class="panel-collapse collapse">
+    <div id="collapse7" class="panel-collapse collapse">
       <div class="panel-body">
-        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
-This project uses simple Javascript and DOM model to implement its functionality.
+        This code implements a responsive website using Bootstrap and JQuery. It explores various features of Bootstrap like Nav-bars, icon font(glyphicon and font awesome), Bootstrap forms, tables, wells, panels etc. Moreover it also implements Bootstrap Javascript components like Accordian, Scrollspy and affix,Tooltips, pop-overs, modals and Carousels.
       </div>
     </div>
   </div>
@@ -266,14 +305,13 @@ This project uses simple Javascript and DOM model to implement its functionality
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-        Matching Game</a>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+        Portfolio Website</a>
       </h4>
     </div>
-    <div id="collapse3" class="panel-collapse collapse">
+    <div id="collapse8" class="panel-collapse collapse">
       <div class="panel-body">
-        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
-This project uses simple Javascript and DOM model to implement its functionality.
+        This is the project which you are experiencing right now. This project is implemented using HTML, CSS, Bootstrap, Javascript and Bootstrap Javascript classes. The code implements a responsive website that lists both personal and professional details.
       </div>
     </div>
   </div>
@@ -281,20 +319,87 @@ This project uses simple Javascript and DOM model to implement its functionality
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-        Matching Game</a>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+        A Microcontroller based Residential Power Limiter</a>
       </h4>
     </div>
-    <div id="collapse3" class="panel-collapse collapse">
+    <div id="collapse9" class="panel-collapse collapse">
       <div class="panel-body">
-        This game is really funny to play. When the game is started, it displays two sets of smileys dynamically on either side. The gamers skill lies in identifying an extra smiley on the left-hand side and clicking on that extra smiley. If a correct smiley is selected, the gamer will be prompted to the next level, else the game ends!
-This project uses simple Javascript and DOM model to implement its functionality.
+        This dissertation involved designing a Microcontroller based residential power limiter. The project is rated as one of the best by including diverse fields of programming, hardware designing, and electronics and electrical circuits. It facilitates a way to automatically administer the residential load that saves electricity which in turn can be used to furnish the power needs in rural areas.
+
+  This project requires an understanding of microcontroller at chip level and Assembly language programming.
       </div>
     </div>
   </div>
-
-
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a href="https://github.com/PavanUlichi">
+        Click to visit my Github</a>
+      </h4>
+    </div>
+  </div>
 </div>
+</div>
+<div style="margin-right: 10%; margin-left: 10%" id="cer">
+  <h2 style="color: #480066; font-family: impact; position: relative" id="proz">Certifications & Achievements</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="https://www.coursera.org/account/accomplishments/verify/DC3XESLEZ423" data-toggle="tooltip" data-placement="top" title="Click to view the certificate"><img src="img/coursera.png" style="width:304px;height:220px;"></a>
+      </div>
+      <div class="col-sm-4">
+        <a href="#" data-toggle="tooltip" data-placement="top" title="Got 4 out of 5 Rating for my first-year confirmation and B band(there are 4 bands A, B, C and D; A being the best) for second year review cycle in Tata Consultancy Services"><img src="img/band.png" style="width:304px;height:220px;"></a>
+      </div>
+      <div class="col-sm-4">
+        <a href="#" data-toggle="tooltip" data-placement="top" title="Received 10,932$ scholarship as University Graduate Scholarship (UGS) for academic merit and accomplishments."><img src="img/ugs.png" style="width:304px;height:220px;"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4"><a href="#" data-toggle="tooltip" data-placement="top" title="Awarded III prize in Paper presentation in a National level technical symposium, “EXODUS-2K13” at MJR college of Engineering and Technology, Piler."><img src="img/ppt.png" style="width:304px;height:220px;"></a></div>
+    </div>
+  </div>
+
+</div><br>
+
+<div style="margin-right: 10%; margin-left: 10%">
+<div class="container">
+  <div class="row">
+    <h2 style="color: black; font-family: impact; position: relative" id="vol">Volunteer experience</h2>
+    <div class="col-sm-4">
+<div class="card" style="width: 20rem;">
+  <div class="card-block">
+    <h4 class="card-title">Organizer of Clean up Cincy</h4>
+    <p class="card-text">CUC is a beautification program founded by UC students in January 2015. The event has attracted attention....<button class="btn-success" data-toggle="popover" title="Clean up Cincy" data-content="CUC is a beautification program founded by UC students in January 2015. The event has attracted attention from businesses such as GE and P&G, the Mayor's office, Ono, county commissioners and the entire local city government. Starting out with 350 volunteers, the program has grown to over 900 each semester.
+
+The event on October was a huge success with over 900 volunteers across Cincinnati. My role as an organizer include receiving and registering the volunteers and guiding them through the event process.">Click to know more</button></p>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="card" style="width: 20rem;">
+<div class="card-block">
+<h4 class="card-title">Volunteer in Bearcats Dash & Bash</h4>
+<p class="card-text">The event, which will be run annually on the first Sunday in October, was co-hosted by the Ohio Innocence Project....<button class="btn-success" data-toggle="popover" title="Bearcat Dash & Bash" data-content="The event, which will be run annually on the first Sunday in October, was co-hosted by the Ohio Innocence Project. Proceeds from the race will benefit athletics scholarships and the OIP, which seeks to identify inmates in Ohio prisons who are actually innocent of the crimes they were convicted of committing. The Ohio Innocence Project to date has helped 23 individuals obtain their long-sought freedom, many of whom were on-hand Sunday to participate in the Freedom Walk, which took participants along the 5k course on UC’s campus.
+
+As a volunteer, I successfully completed the 5k run course bolstering my support to the cause of the event.">Click to know more</button></p>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="card" style="width: 20rem;">
+<div class="card-block">
+<h4 class="card-title">Organizer of Robo-mantra</h4>
+<p class="card-text">Robo-mantra is a part of my undergraduate colleges Nattional level Techno-Cultural fest Mohana mantra....<button class="btn-success" data-toggle="popover" title="Robo-mantra" data-content="Robo-mantra is a part of my undergraduate colleges Nattional level Techno-Cultural fest Mohana Mantra. Participants from around 70 colleges had participated in the event. Robo-mantra has several competitions line: Line follower, Maze decoder, Lap runner etc.. My responsibilities include leading a team of 15 people to make all the necessary arrangements for the event">Click to know more</button></p>
+</div>
+</div>
+</div>
+
+</div></div></div>
+<br><br>
             <footer class="row-footer">
                 <div class="container">
                     <div class="row">
@@ -332,5 +437,31 @@ This project uses simple Javascript and DOM model to implement its functionality
            });
        });
    </script>
+   <script>
+   $(function() {
+       $('marquee').mouseover(function() {
+           $(this).attr('scrollamount',0);
+       }).mouseout(function() {
+            $(this).attr('scrollamount',5);
+       });
+   });
+   </script>
+   <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+<script>
+function jumpto(h) {
+    var elmnt = document.getElementById(h);
+    elmnt.scrollIntoView();
+}
+</script>
+
 </body>
 </html>
