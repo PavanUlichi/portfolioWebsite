@@ -17,8 +17,15 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">Pavan Ulichi</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">
+                          Toggle navigation</span> <!-- Used by Screen Readers -->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+        </button>
         </div>
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav" id="navbar">
           <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
           <li><a role="button" onclick="jumpto('about')"><i class="fa fa-heartbeat" aria-hidden="true"></i> About me</a></li>
           <li><a role="button" onclick="jumpto('vol')"><i class="fa fa-hand-paper-o" aria-hidden="true"></i> Volunteer experience</a></li>
@@ -118,7 +125,8 @@
       <div class="col-sm-3" style="background-color: #F98D76; color: white; font-size: 200%; margin-top:-30px"><i class="fa fa-heart" aria-hidden="true"></i> Favourite quotes</div>
       <div class="col-sm-9">
         <marquee onMouseOver="this.stop()" onMouseOut="this.start()" behavior="scroll" direction="left" style="margin-top:-40px"><h3>You must be the change you wish to see in the world.<sub>--Mahatma Gandhi</sub>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     We are what our thoughts have made us; so take care about what you think. Words are secondary. Thoughts live; they travel far. <sub>--Swamy Vivekananda</sub>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Your most unhappy customers are your greatest source of learning. <sub>--Bill Gates</<sub></h3></marquee>
-        </div></div></div>
+        </div></div>
+      </div>
         <div class="container">
           <div class="row">
             <div class="col-sm-3" data-toggle="modal" data-target="#myModal1">
